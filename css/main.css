@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    color: rgb(234, 57, 36);
+    color: rgb(234, 51, 94);
+    color: rgb(241, 155, 56);
+    color: rgb(255, 253, 84);
+    color: rgb(193,215,77);
+    color: rgb(125, 251, 76);
+    color: rgb(117, 251, 122);
+    color: rgb(117,251,183);
+    color: rgb(88, 193, 249);
+    color: rgb(118, 21, 245);
+    color: rgb(230, 50, 246);
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(38, 134, 252);
+    /* background-color: rgb(230, 50, 246); */
+    font-family: Trebuchet MS;
+    margin: auto;
+
+}
+
+.title {
+    display: inline-flex;
+}
+
+h1 {
+    background-color: white;
+    border-radius: 50%;
+    border: solid 2px rgb(249, 84, 66);
+    height: 70px;
+    width: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: rgb(234, 57, 36);
+    font-weight: bolder;
+    
+}
+  
+
+h3 {
+    color: rgb(234, 57, 36);
+    text-align: center;
+    margin: 25px;
+}
+
+button {
+    background-color: rgb(125, 251, 76);
+    border-color: rgb(88, 193, 249);
+    border-width: 5px;
+    border-radius: 25px;
+    color: rgb(118, 21, 245);
+    font-size: larger;
+    font-weight: bold;
+    height: 50px;
+    width: 200px;
+    margin: 0px 0px 50px 0px;
+
+}
+
+.container {
+    background-color: gold;
+    border: solid 5px rgb(88, 193, 249);
+    border-radius: 10px;
+    height: 300px;
+    width: 850px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#slot1 {
+    background-color: white;
+    border-radius: 10px;
+    border: solid 5px rgb(255, 253, 84);
+    height: 92%;
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#slot2 {
+    background-color: white;
+    border-radius: 10px;
+    border: solid 5px rgb(255, 253, 84);
+    height: 92%;
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#slot3 {
+    background-color: white;
+    border-radius: 10px;
+    border: solid 5px rgb(255, 253, 84);
+    height: 92%;
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.icons {
+    height: 100px;
+    width: 100px;
+}
+
+#diamond {
+    
+
+}
+
+#cherry {
+
+}
+
+#bell {
+
+}
+
