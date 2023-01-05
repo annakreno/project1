@@ -21,7 +21,8 @@ const slotEl3 = document.getElementById("slot3");
 let winner = document.querySelector("div.winStatus");
 let leverEl = document.getElementById("lever");
 let confettiEl = document.getElementById("confetti");
-let loseEffectEl = document.getElementById("loseEffect")
+let loseEffectEl = document.getElementById("loseEffect");
+const winningsEl = document.querySelector(".points > h3:last-child");
 
 /*----- event listeners -----*/
 leverEl.addEventListener("click", init);
@@ -65,6 +66,13 @@ function checkForWinner(allSlots) {
         setTimeout(function(){
             winner.innerHTML = "<h3> WINNER 🎉 </h3>";
         }, 500);
+        if(winningsEl.innerText) {
+            let amountWon = parseInt(winningsEl.innerText);
+            amountWon = amountWon + 100;
+            winningsEl.innerText = amountWon;
+            } else {
+                winningsEl.innerText = 100;
+            }
         setTimeout(function() {
             confettiEl.classList.remove("confetti");
         }, 5000);
@@ -75,6 +83,6 @@ function checkForWinner(allSlots) {
         }, 500);
         setTimeout(function() {
             loseEffectEl.classList.remove("loseEffect");
-        }, 10000);
+        }, 3000);
     }
 }
