@@ -19,7 +19,9 @@ const slotEl1 = document.getElementById("slot1");
 const slotEl2 = document.getElementById("slot2");
 const slotEl3 = document.getElementById("slot3");
 let winner = document.querySelector("div.winStatus");
-let leverEl = document.getElementById("lever")
+let leverEl = document.getElementById("lever");
+let confettiEl = document.getElementById("confetti");
+let loseEffectEl = document.getElementById("loseEffect")
 
 /*----- event listeners -----*/
 leverEl.addEventListener("click", init);
@@ -28,7 +30,7 @@ leverEl.addEventListener("click", init);
 
 function init() {
     leverPull();
-    spinSlots();
+    setTimeout(function() {spinSlots()}, 1000);
     setTimeout(function() {updateIcons()}, 4000);
     setTimeout(function(){checkForWinner()}, 5000);
 }
@@ -59,12 +61,20 @@ function updateIcons() {
 
 function checkForWinner(allSlots) {
     if(slotEl1.innerHTML === slotEl2.innerHTML && slotEl2.innerHTML === slotEl3.innerHTML) {
+        confettiEl.classList.add("confetti");
         setTimeout(function(){
-            winner.innerHTML = "<h3> WINNER 🎉 </h3>"
+            winner.innerHTML = "<h3> WINNER 🎉 </h3>";
         }, 500);
+        setTimeout(function() {
+            confettiEl.classList.remove("confetti");
+        }, 5000);
     } else {
         setTimeout(function(){
-            winner.innerHTML = "<h3> You lose 😢 </h3>"
+            loseEffectEl.classList.add("loseEffect");
+            winner.innerHTML = "<h3> CLICK THE LEVER TO PLAY AGAIN </h3>";
         }, 500);
+        setTimeout(function() {
+            loseEffectEl.classList.remove("loseEffect");
+        }, 10000);
     }
 }
