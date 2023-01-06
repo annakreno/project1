@@ -56,7 +56,7 @@ function spinSlots() {
 }
 
 function getRandomNum() {
-    return Math.floor(Math.random() * 2);
+    return Math.floor(Math.random() * 8);
 }
 
 function updateIcons() {
