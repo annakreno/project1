@@ -71,7 +71,7 @@ function checkForWinner(allSlots) {
         winSoundEl.play();
         confettiEl.classList.add("confetti");
         setTimeout(function(){
-            winner.innerHTML = "<h3> WINNER 🎉 </h3>";
+            winner.innerHTML = "<h3> WINNER</h3>";
         }, 500);
         if(winningsEl.innerText) {
             let amountWon = parseInt(winningsEl.innerText);
