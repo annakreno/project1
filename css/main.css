@@ -1,26 +1,6 @@
 * {
     box-sizing: border-box;
-    color: rgb(234, 57, 36);
-    color: rgb(234, 51, 94);
-    color: rgb(241, 155, 56);
-    color: rgb(255, 253, 84);
-    color: rgb(193,215,77);
-    color: rgb(125, 251, 76);
-    color: rgb(117, 251, 122);
-    color: rgb(117,251,183);
-    color: rgb(88, 193, 249);
-    color: rgb(118, 21, 245);
-    color: rgb(230, 50, 246);
 }
-
-/* :root {
-    --bg: yellow;
-}
-
-html, body {
-    background-color: #101e35;
-    font-size: 10px;
-} */
 
 label {
     color: white;
