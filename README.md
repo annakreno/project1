@@ -1,4 +1,4 @@
-# project1
+# Slot Machine Game
 HTML/CSS/JS browser based game
 
 Slot Machine: Click the lever to spin the slots. If all three slots land on the same icon, you win! If the icons don't match, you lose. Each win adds $100 to your total winnings.
