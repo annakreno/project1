@@ -11,7 +11,7 @@ Screenshots of game:
 Technologies Used: JavaScript, HTML, CSS.
 
 Getting Started: 
-    - https://annakreno.github.io/project1/ 
+    - https://annakreno.github.io/slotmachinegame/ 
     - Click the lever to spin the slots.
 
 Next Steps: 
